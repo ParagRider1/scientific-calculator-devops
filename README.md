@@ -204,3 +204,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Built as a mini-project for Software Engineering Principles
 - Inspired by classic scientific calculator functionality
+
+
+NOTE:
+for webhook GitScm, make sure ngrok running, using >> ngrok http 8080, then only for each push or update in repo, jenkins will automatically trigger and build job 
