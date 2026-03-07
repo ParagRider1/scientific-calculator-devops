@@ -25,7 +25,7 @@
             }
         }
 
-        stage('Test') {
+         stage('Test') {
             steps {
                 sh 'mvn test'
             }
@@ -65,7 +65,7 @@
             )
         }
 
-        unstable {
+         unstable {
             emailext (
                     subject: "UNSTABLE Build: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                     body: "Build is unstable.\n${env.BUILD_URL}",
@@ -73,7 +73,7 @@
             )
         }
 
-        failure {
+         failure {
             emailext (
                     subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                     body: "Build failed.\n${env.BUILD_URL}",
