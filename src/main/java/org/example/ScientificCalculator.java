@@ -15,7 +15,7 @@ public class ScientificCalculator {
             int choice = getChoice();
             
             if (choice == 9) {
-                System.out.println("Exiting calculator. Goodbye!!!");
+                System.out.println("Exiting scientific calculator !");
                 break;
             }
             
@@ -26,7 +26,7 @@ public class ScientificCalculator {
     }
 
     private void displayMenu() {
-        System.out.println("=== Scientific Calculator ===");
+        System.out.println("================== Scientific Calculator ================= ");
         System.out.println("1. Addition (+)");
         System.out.println("2. Subtraction (-)");
         System.out.println("3. Multiplication (*)");
